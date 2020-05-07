@@ -1,2 +1,2 @@
 # Art-Gallery-website-
-![GitHub Logo](/data/a.png)
+![Iamges](/data/a.png)
