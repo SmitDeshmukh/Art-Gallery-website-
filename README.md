@@ -1,2 +1,2 @@
 # Art-Gallery-website-
-![Iamges](/data/a.png)
+![Iamges](/data/a.jpg)
