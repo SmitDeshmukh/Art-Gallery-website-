@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		myP=new Array('a.jpg','b.jpg','c.jpg');
+		cp=0;
+		function RSS(fb) 
+		{
+			if(document.images)
+			{
+				cp+=fb;
+				if(cp>=(myP.length-1))
+				{
+					cp=0;
+				}
+				if(cp<0)
+				{
+					cp=myP.length-1;
+				}
+				document.cover.src=myP[cp];
+			}
+		}
+	</script>
+</head>
+<body>
+	<img src="csm.jpg" name="cover">
+	<input type="button" value="forward" onclick="RSS(1)">
+	<input type="button" value="backward" onclick="RSS(-1)">
+
+
+
+</body>
+</html>

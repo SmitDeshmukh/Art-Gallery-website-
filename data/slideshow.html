@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		myB=new Array('a.jpg','b.jpg');
+		cp=0;
+		nb=myB.length;
+
+		function Disp() 
+		{
+			
+			if(document.images)
+			{
+				cp++;
+				if(cp==nb)
+				{
+					cp=0;
+
+				}
+				document.cover.src=myB[cp];
+				setTimeout("Disp()",5000);
+			}	
+
+		}
+	</script>
+</head>
+<body onload="Disp()">
+	<img src="cms.jpg" name="cover" >
+
+</body>
+</html>
